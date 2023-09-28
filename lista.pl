@@ -8,6 +8,6 @@ impinv(L) :- L=[], !.
 
 impinv(L) :- L=[A|Resto], impinv(Resto), format('~w~n', [A]).
 
-somar([A], Soma)) :- Soma=A.
+somar([A], Soma) :- Soma=A.
 
-somar(L, S) :- L=[A|R], somar(R, Aux), S is A+Aux.%esta com erros
+somar(L, S) :- L=[A|R], somar(R, Aux), S is A+Aux.
